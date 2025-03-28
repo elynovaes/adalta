@@ -12,7 +12,7 @@ const TabRoutes = () => {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarStyle: { backgroundColor: "#12562D" },
+        tabBarStyle: { backgroundColor: "#0e4275" },
         tabBarShowLabel: false,
         tabBarActiveBackgroundColor: "#ffa3"  
       }}

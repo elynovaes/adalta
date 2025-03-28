@@ -1,6 +1,6 @@
 declare module '*.png' {
   // @ts-ignore
-  const value: value;
+  const value: any;
   export default value;
 }
 
