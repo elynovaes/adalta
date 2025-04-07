@@ -18,7 +18,7 @@ const TabRoutes = () => {
       }}
     >
       <Tab.Screen 
-        name="Home"
+        name="Inicio"
         component={Home}
         options={{
           tabBarIcon: () => <Feather name="home" size={24} color="#fff" />
@@ -28,6 +28,7 @@ const TabRoutes = () => {
         name="Perfil"
         component={Perfil}
         options={{
+          headerTitle: "Perfil",
           tabBarIcon: () => <Feather name="user" size={24} color="#fff" />
         }}
       />

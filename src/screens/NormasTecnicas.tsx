@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-const Works = () => {
+const NormasTecnicas = () => {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app! Works</Text>
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Works;
+export default NormasTecnicas;

@@ -4,10 +4,15 @@ import colors from "./colors";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: colors.primary,
-    paddingHorizontal: 5,
+    backgroundColor: colors.tertiary,
+    paddingHorizontal: 15,
+    paddingVertical: 15,
+  },
+
+  containerOS: {
+    flexDirection: 'column',
+    gap: 10,
   }
 });
 

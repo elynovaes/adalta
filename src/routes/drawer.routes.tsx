@@ -5,8 +5,8 @@ import { View, Image } from 'react-native';
 import styleLogo from "styles/main";
 
 import TabRoutes from "./tab.routes";
-import Perfil from "../screens/Perfil";
-import Works from "screens/Actions";
+import NormasTecnicas from "screens/NormasTecnicas";
+import Perfil from "screens/Perfil";
 
 import logo from "../../assets/logo.png";
 
@@ -27,7 +27,7 @@ const DrawerRoutes = () => {
   return (
     <Drawer.Navigator
       screenOptions={{
-        title: '',
+        headerTitleAlign: "center",
         drawerStyle: { backgroundColor: "#0e4275" },
         drawerLabelStyle: { color: "#fff" },
         headerStyle: { backgroundColor: "#0e4275" },
@@ -36,27 +36,21 @@ const DrawerRoutes = () => {
       drawerContent={(props) => <CustomDrawerContent  {...props} />}
     >
       <Drawer.Screen
-        name="Início"
+        name="Home"
         component={TabRoutes}
         options={{
+          headerTitle: "Home",
           drawerIcon: ({ size }) => <Feather name="home" color="#fff" size={size}/>,
           drawerLabel: 'Início'
         }}
       />
       <Drawer.Screen
-        name="Profile"
-        component={Perfil}
+        name="NormasTecnicas"
+        component={NormasTecnicas}
         options={{
-          drawerIcon: ({ size }) => <Feather name="user" color="#fff" size={size}/>,
-          drawerLabel: 'Meu Perfil'
-        }}
-      />
-      <Drawer.Screen
-        name="Works"
-        component={Works}
-        options={{
-          drawerIcon: ({ size }) => <Feather name="settings" color="#fff" size={size}/>,
-          drawerLabel: 'Meus Serviços'
+          headerTitle: "Normas Técnicas",
+          drawerIcon: ({ size }) => <Feather name="file-text" color="#fff" size={size}/>,
+          drawerLabel: 'Normas Técnicas'
         }}
       />
     </Drawer.Navigator>
